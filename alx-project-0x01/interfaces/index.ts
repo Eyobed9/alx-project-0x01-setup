@@ -40,3 +40,16 @@ interface Company {
     bs: string;
 }
 
+// Post data interface
+export interface PostData {
+    userId: number;
+    id?: number;
+    title: string;
+    body: string;
+}
+
+// Post modal props interface
+export interface PostModalProps {
+    onClose: () => void;
+    onSubmit: (post: PostData) => void;
+}

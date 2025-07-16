@@ -7,7 +7,7 @@ const UserCard:React.FC<UserProps> = ({name, username, email, address, phone, we
         <h2 className="text-2xl font-semibold text-gray-800">{name} | {username}</h2>
       </div>
       <p className="text-gray-600">{email}</p>
-      <div className="mt-4 flex items-center flex-col justify-between text-sm text-gray-500">
+      <div className="mt-4 flex items-start flex-col justify-between text-md text-black">
         <span>Address: {address.street} {address.suite} {address.city} {address.zipcode}</span>
         <span>Location: Latitude - {address.geo.lat} Longitude - {address.geo.lng}</span>
         <span>Phone: {phone}</span>
